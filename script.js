@@ -1,3 +1,26 @@
+const searchInput = document.createElement("input");
+searchInput.placeholder = "Search notes...";
+searchInput.style.position = "fixed";
+searchInput.style.top = "1rem";
+searchInput.style.left = "1rem";
+searchInput.style.padding = "5px";
+
+document.body.appendChild(searchInput);
+
+searchInput.addEventListener("input", (e) => {
+  const searchText = e.target.value.toLowerCase();
+  const notes = document.querySelectorAll(".note");
+
+  notes.forEach((note) => {
+    const content = note.querySelector("textarea").value.toLowerCase();
+    if (content.includes(searchText)) {
+      note.style.display = "block";
+    } else {
+      note.style.display = "none";
+    }
+  });
+});
+
 const addButton = document.getElementById("add");
 const notes = JSON.parse(localStorage.getItem("notes"));
 
