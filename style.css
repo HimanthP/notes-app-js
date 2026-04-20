@@ -97,3 +97,7 @@ input {
 .tools .title {
   font-weight: bold;
 }
+
+.pinned {
+  border: 2px solid gold;
+}
