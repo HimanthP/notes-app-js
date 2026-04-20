@@ -13,4 +13,4 @@ A simple notes application with real-time editing and local storage.
 - JavaScript
 
 ## Live Demo
-(Will add after deployment)
+https://himanthp.github.io/notes-app-js/
