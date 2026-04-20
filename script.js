@@ -1,3 +1,4 @@
+// redeploy trigger
 const addButton = document.getElementById("add");
 const savedNotes = JSON.parse(localStorage.getItem("notes")) || [];
 
