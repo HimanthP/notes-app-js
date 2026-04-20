@@ -67,3 +67,33 @@ body {
 .hidden {
   display: none;
 }
+input {
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
+
+.tools {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tools .title {
+  border: none;
+  outline: none;
+  padding: 5px;
+  font-size: 1rem;
+  width: 60%;
+  background: transparent;
+  color: white;
+}
+
+.tools div {
+  display: flex;
+  gap: 5px;
+}
+
+.tools .title {
+  font-weight: bold;
+}
